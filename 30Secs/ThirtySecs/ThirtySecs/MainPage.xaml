@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ThirtySecs"
+             x:Class="ThirtySecs.MainPage">
+
+    <StackLayout
+        BackgroundColor="#8da7c6"
+        >
+        <!-- Place new controls here -->
+        
+        
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label
+                Text="Thirty Seconds"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                
+                
+                TextColor="White"
+                FontSize="45"
+                
+                Margin="0, 0, 0, 50"
+                />
+            <Button
+                Text="New Game"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200"
+                
+                BackgroundColor="#3c80d1"
+                />
+            <Button
+                Text="Resume Game"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200"
+                BackgroundColor="#3c80d1"
+                />
+            <Button
+                Text="Online Game"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="200"
+                BackgroundColor="#3c80d1"
+                />
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>
