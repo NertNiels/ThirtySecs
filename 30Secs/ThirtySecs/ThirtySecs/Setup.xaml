@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThirtySecs.Setup">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand">
+
+                <Label
+                    Text="New Game"
+                    
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0, 0, 0, 50"
+                    
+                    TextColor="White"
+                    FontSize="45"/>
+                
+
+                <StackLayout
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+
+                    <Label
+                        Text="Difficulty"
+                    
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        
+                        TextColor="White"
+                        FontSize="20"/>
+
+                    <RelativeLayout>
+                        <Button
+                            Text="Easy"
+                        
+                            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.33, Constant=0}"
+                        
+                            BackgroundColor="#3c80d1"
+                        />
+                        <Button
+                            Text="Normal"
+                        
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="#3c80d1"
+                        />
+                        <Button
+                            Text="Hard"
+                        
+                            HorizontalOptions="EndAndExpand"
+                            BackgroundColor="#3c80d1"
+                        />
+                    </RelativeLayout>
+                </StackLayout>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

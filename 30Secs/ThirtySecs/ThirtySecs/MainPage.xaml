@@ -29,7 +29,7 @@
                 VerticalOptions="Center"
                 WidthRequest="200"
                 
-                BackgroundColor="#3c80d1"
+                BackgroundColor="#3c80d1" 
                 />
             <Button
                 Text="Resume Game"
