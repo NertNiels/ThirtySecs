@@ -5,8 +5,7 @@
              x:Class="ThirtySecs.MainPage">
 
     <StackLayout
-        BackgroundColor="#8da7c6"
-        >
+        BackgroundColor="#8da7c6">
         <!-- Place new controls here -->
         
         
