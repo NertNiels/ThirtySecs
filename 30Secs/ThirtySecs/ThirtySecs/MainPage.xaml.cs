@@ -13,5 +13,10 @@ namespace ThirtySecs
         {
             InitializeComponent();
         }
+
+        async void NewGameButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Setup(), true);
+        }
     }
 }

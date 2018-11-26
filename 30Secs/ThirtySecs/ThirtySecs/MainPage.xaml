@@ -28,7 +28,8 @@
                 VerticalOptions="Center"
                 WidthRequest="200"
                 
-                BackgroundColor="#3c80d1" 
+                BackgroundColor="#3c80d1"
+                Clicked="NewGameButton_Clicked"
                 />
             <Button
                 Text="Resume Game"
