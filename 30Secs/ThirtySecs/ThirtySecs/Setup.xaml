@@ -37,21 +37,30 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <Button
+                                x:Name="easyButton"
                                 Text="Easy"
+                                
+                                Clicked="EasyButton_Clicked"
                         
                                 BackgroundColor="#3c80d1"
                             />
                         </StackLayout>
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <Button
+                                x:Name="normalButton"
                                 Text="Normal"
+                                
+                                Clicked="NormalButton_Clicked"
                         
-                                BackgroundColor="#3c80d1"
+                                BackgroundColor="DarkGray"
                             />
                         </StackLayout>
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <Button
+                                x:Name="hardButton"
                                 Text="Hard"
+                                
+                                Clicked="HardButton_Clicked"
                             
                                 BackgroundColor="#3c80d1"
                             />
@@ -74,14 +83,16 @@
 
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Slider 
-                            Maximum="100"
+                            Maximum="99"
                             Minimum="10"
                             Value="30"
                             HorizontalOptions="FillAndExpand"
                             
+                            ValueChanged="Slider_ValueChanged"
+                            
                             ThumbColor="White"/>
                         
-                        <Label Text="30" TextColor="White" FontSize="18"/>
+                        <Label x:Name="numberWords" Text="30" TextColor="White" FontSize="18"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -92,7 +103,10 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <Button
+                                x:Name="backButton"
                                 Text="Back"
+                                
+                                Clicked="BackButton_Clicked"
                                 
                                 BackgroundColor="OrangeRed"/>
                         </StackLayout>

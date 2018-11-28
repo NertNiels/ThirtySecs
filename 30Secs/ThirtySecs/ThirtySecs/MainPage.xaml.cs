@@ -12,6 +12,7 @@ namespace ThirtySecs
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         async void NewGameButton_Clicked(object sender, EventArgs e)

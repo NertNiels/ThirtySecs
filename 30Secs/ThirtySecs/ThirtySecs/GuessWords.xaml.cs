@@ -15,6 +15,7 @@ namespace ThirtySecs
 		public GuessWords ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 	}
 }
