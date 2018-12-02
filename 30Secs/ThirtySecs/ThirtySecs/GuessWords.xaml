@@ -1,12 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="ThirtySecs.GuessWords">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#8da7c6">
+            
+            <skia:SKCanvasView x:Name="timerCanvas"
+                               PaintSurface="OnCanvasViewPaintSurface"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               HorizontalOptions="End"
+                               IgnorePixelScaling="False"/>
+            
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         Padding="50, 0">
+
+                <Label x:Name="title"
+                       Text="Explain ..."
+                       FontSize="45"
+                       TextColor="White"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout Margin="0, 20, 0, 0">
+                    <Button x:Name="word1"
+                            Text="UNDIFINED1"
+                            FontSize="25"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="Word1_Clicked"/>
+                    <Button x:Name="word2"
+                            Text="UNDIFINED2"
+                            FontSize="25"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="Word2_Clicked"/>
+                    <Button x:Name="word3"
+                            Text="UNDIFINED3"
+                            FontSize="25"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="Word3_Clicked"/>
+                    <Button x:Name="word4"
+                            Text="UNDIFINED4"
+                            FontSize="25"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="Word4_Clicked"/>
+                    <Button x:Name="word5"
+                            Text="UNDIFINED5"
+                            FontSize="25"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Clicked="Word5_Clicked"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
